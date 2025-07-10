@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Virtual Lab | Interactive Simulations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-atom"></i>
+          <span>PhysicsLab</span>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#experiments">Experiments</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Interactive Physics Laboratory</h1>
+          <p>
+            Explore fundamental physics concepts through realistic simulations
+            with real-time data visualization.
+          </p>
+          <a href="#experiments" class="btn btn-primary">Start Experimenting</a>
+        </div>
+        <div class="hero-image">
+          <div class="simulation-preview" id="hero-simulation"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiments" class="experiments-section">
+      <div class="container">
+        <h2>Available Experiments</h2>
+        <div class="experiments-grid">
+          <div class="experiment-card" data-experiment="pendulum">
+            <div class="experiment-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Pendulum Motion</h3>
+            <p>Study simple harmonic motion with adjustable parameters.</p>
+            <button class="btn btn-outline">Launch</button>
+          </div>
+          <div class="experiment-card" data-experiment="projectile">
+            <div class="experiment-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Projectile Motion</h3>
+            <p>Analyze trajectory with varying angles and velocities.</p>
+            <button class="btn btn-outline">Launch</button>
+          </div>
+          <div class="experiment-card" data-experiment="waves">
+            <div class="experiment-icon">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3>Wave Interference</h3>
+            <p>Observe wave patterns and interference phenomena.</p>
+            <button class="btn btn-outline">Launch</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="simulation-area">
+      <div class="container">
+        <div class="simulation-header">
+          <h2 id="simulation-title">Pendulum Motion</h2>
+          <div class="simulation-controls">
+            <button id="reset-btn" class="btn btn-secondary">
+              <i class="fas fa-redo"></i> Reset
+            </button>
+            <button id="fullscreen-btn" class="btn btn-secondary">
+              <i class="fas fa-expand"></i> Fullscreen
+            </button>
+          </div>
+        </div>
+
+        <div class="simulation-container">
+          <div class="canvas-container">
+            <canvas id="simulation-canvas"></canvas>
+          </div>
+          <div class="controls-panel">
+            <div class="control-group">
+              <h3>Parameters</h3>
+              <div class="control" id="parameter-controls">
+                <!-- Dynamically filled by JS -->
+              </div>
+            </div>
+            <div class="control-group">
+              <h3>Data Visualization</h3>
+              <div class="data-vis">
+                <canvas id="data-canvas"></canvas>
+              </div>
+              <div class="data-controls">
+                <button id="toggle-graph" class="btn btn-small">
+                  <i class="fas fa-chart-line"></i> Toggle Graph
+                </button>
+                <button id="export-data" class="btn btn-small">
+                  <i class="fas fa-download"></i> Export Data
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About PhysicsLab</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              PhysicsLab provides accurate, interactive simulations of
+              fundamental physics experiments. Our virtual laboratory allows
+              students and enthusiasts to explore physics concepts without the
+              constraints of a physical lab.
+            </p>
+            <p>
+              All simulations are based on real physics equations and provide
+              real-time data collection for analysis. The platform is designed
+              to complement traditional physics education.
+            </p>
+            <div class="features-grid">
+              <div class="feature">
+                <i class="fas fa-ruler-combined"></i>
+                <h4>Precise Measurements</h4>
+                <p>Accurate simulations with adjustable precision</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-chart-bar"></i>
+                <h4>Data Analysis</h4>
+                <p>Real-time graphing and data export</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-sliders-h"></i>
+                <h4>Customizable</h4>
+                <p>Adjust all parameters to test hypotheses</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Physics lab equipment"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PhysicsLab</h3>
+            <p>
+              Interactive virtual laboratory for physics education and
+              exploration.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#experiments">Experiments</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 PhysicsLab. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="experiment-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h3>Experiment Instructions</h3>
+        <div id="modal-content">
+          <!-- Filled dynamically -->
+        </div>
+        <button class="btn btn-primary" id="start-experiment">
+          Begin Experiment
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
