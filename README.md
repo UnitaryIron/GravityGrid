@@ -32,8 +32,8 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/physics-virtual-lab.git
-   cd physics-virtual-lab
+   git clone https://github.com/unitaryiron/gravitygrid.git
+   cd gravitygrid
 2. The project requires no server-side components and can be opened directly in a browser. However, for best results:
 
    - Use a modern web browser (Chrome, Firefox, Edge, or Safari)
@@ -48,127 +48,122 @@ To run this project locally, follow these steps:
 
 1. Navigation:
 
-Use the header menu to navigate between sections
+ - Use the header menu to navigate between sections
+ - The mobile-responsive menu automatically appears on smaller screens
 
-The mobile-responsive menu automatically appears on smaller screens
+2. Running Experiments:
 
-Running Experiments:
+ - Select an experiment from the "Available Experiments" section
+ - Adjust parameters using the controls panel
+ - Click "Reset" to return to default settings
+ - Use "Fullscreen" for an immersive experience
 
-Select an experiment from the "Available Experiments" section
+3. Data Analysis:
 
-Adjust parameters using the controls panel
+ - View real-time graphs of experiment data
+ - Toggle between different data visualizations
+ - Export data for further analysis
 
-Click "Reset" to return to default settings
+## Experiments
 
-Use "Fullscreen" for an immersive experience
-
-Data Analysis:
-
-View real-time graphs of experiment data
-
-Toggle between different data visualizations
-
-Export data for further analysis
-
-Contact Form:
-
-Fill out the contact form to send messages to the development team
-
-Experiments
 Currently available experiments:
 
-1. Pendulum Motion
-Study simple harmonic motion
+1. **Pendulum Motion**
 
-Adjustable parameters:
+**Adjustable parameters:**
+- Pendulum length  
+- Mass  
+- Gravity  
+- Initial angle  
+- Damping coefficient  
 
-Pendulum length
+2. **Projectile Motion**
 
-Mass
+**Adjustable parameters:**
+- Launch angle  
+- Initial velocity  
+- Projectile mass  
+- Air resistance  
+- Gravity  
 
-Gravity
+3. **Wave Interference**
 
-Initial angle
+**Adjustable parameters:**
+- Wave frequency  
+- Amplitude  
+- Wavelength  
+- Number of sources  
+- Phase difference  
 
-Damping coefficient
+---
 
-2. Projectile Motion
-Analyze trajectory physics
+## Technical Details
 
-Adjustable parameters:
+**Frontend:** HTML5, CSS3, JavaScript (ES6+)  
+**Graphics:** Canvas API for simulations and data visualization  
+**Responsive Design:** Flexbox and media queries  
+**Fonts:** Google Fonts (Roboto and Open Sans)  
+**Icons:** Font Awesome  
+**Structure:** Semantic HTML5 with clear section separation  
 
-Launch angle
+---
 
-Initial velocity
+## Dependencies
 
-Projectile mass
-
-Air resistance
-
-Gravity
-
-3. Wave Interference
-Observe wave patterns and interference
-
-Adjustable parameters:
-
-Wave frequency
-
-Amplitude
-
-Wavelength
-
-Number of sources
-
-Phase difference
-
-Technical Details
-Frontend: HTML5, CSS3, JavaScript (ES6+)
-
-Graphics: Canvas API for simulations and data visualization
-
-Responsive Design: Flexbox and media queries
-
-Fonts: Google Fonts (Roboto and Open Sans)
-
-Icons: Font Awesome
-
-Structure: Semantic HTML5 with clear section separation
-
-Dependencies
 This project uses the following external resources:
 
-Font Awesome - For icons
+- **Font Awesome** – For icons  
+- **Google Fonts** – For typography  
+- **CDNJS** – For hosting external libraries  
 
-Google Fonts - For typography
+_All dependencies are loaded via CDN; no package manager is required._
 
-CDNJS - For hosting external libraries
+---
 
-All dependencies are loaded via CDN; no package manager is required.
+## Contributing
 
-Contributing
-We welcome contributions to the Physics Virtual Lab! To contribute:
+We welcome contributions to the **Physics Virtual Lab**!
 
-Fork the repository
+To contribute:
 
-Create a new branch for your feature (git checkout -b feature/AmazingFeature)
+1. Fork the repository  
+2. Create a new branch for your feature  
+   ```bash
+   git checkout -b feature/AmazingFeature
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
 
-Push to the branch (git push origin feature/AmazingFeature)
+## Contributing
 
+We welcome contributions to **GravityGrid**!
+
+To contribute:
+
+1. **Fork** the repository  
+2. **Create a new branch** for your feature:  
+   ```bash
+   git checkout -b feature/AmazingFeature
+Commit your changes:
+
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+Push to the branch:
+
+```bash
+git push origin feature/AmazingFeature
+```
 Open a Pull Request
 
 Please ensure your code follows the existing style and includes appropriate documentation.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License – see the LICENSE file for details.
 
 Contact
 For questions, suggestions, or support, please use the contact form in the application or reach out to:
 
-Email: contact@physicslab.example.com
+Email: contact@gravitygrid.example.com
 
-Twitter: @PhysicsLab
+Twitter: @GravityGrid
 
-GitHub: github.com/physicslab
+GitHub: github.com/gravitygrid
