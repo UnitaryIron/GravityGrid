@@ -70,30 +70,30 @@ Currently available experiments:
 
 1. **Pendulum Motion**
 
-**Adjustable parameters:**
-- Pendulum length  
-- Mass  
-- Gravity  
-- Initial angle  
-- Damping coefficient  
+ **Adjustable parameters:**
+ - Pendulum length  
+ - Mass  
+ - Gravity  
+ - Initial angle  
+ - Damping coefficient  
 
 2. **Projectile Motion**
 
-**Adjustable parameters:**
-- Launch angle  
-- Initial velocity  
-- Projectile mass  
-- Air resistance  
-- Gravity  
+ **Adjustable parameters:**
+ - Launch angle  
+ - Initial velocity  
+ - Projectile mass  
+ - Air resistance  
+ - Gravity  
 
 3. **Wave Interference**
 
-**Adjustable parameters:**
-- Wave frequency  
-- Amplitude  
-- Wavelength  
-- Number of sources  
-- Phase difference  
+ **Adjustable parameters:**
+ - Wave frequency  
+ - Amplitude  
+ - Wavelength  
+ - Number of sources  
+ - Phase difference  
 
 ---
 
@@ -142,28 +142,22 @@ To contribute:
 2. **Create a new branch** for your feature:  
    ```bash
    git checkout -b feature/AmazingFeature
-Commit your changes:
-
-```bash
-git commit -m 'Add some AmazingFeature'
-```
-Push to the branch:
-
-```bash
-git push origin feature/AmazingFeature
-```
-Open a Pull Request
-
+3. **Commit** your changes:
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request:
 Please ensure your code follows the existing style and includes appropriate documentation.
 
-License
+## License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-Contact
+## Contact
 For questions, suggestions, or support, please use the contact form in the application or reach out to:
 
-Email: contact@gravitygrid.example.com
-
-Twitter: @GravityGrid
-
+Email: em-lijo@outlook.com
 GitHub: github.com/gravitygrid
